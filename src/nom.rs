@@ -750,7 +750,7 @@ mod tests {
   #[test]
   fn character() {
     let empty: &[u8] = b"";
-    let a: &[u8] = b"abcd";
+    let a: &[u8] = b"abc";
     let b: &[u8] = b"1234";
     let c: &[u8] = b"a123";
     let d: &[u8] = "azé12".as_bytes();
