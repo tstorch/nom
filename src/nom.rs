@@ -1110,7 +1110,7 @@ mod tests {
   fn hex_digit_test() {
     let empty = &b""[..];
 
-    let i = &b""[..];
+    let i = &b"0123456789abcdefABCDEF"[..];
     assert_eq!(hex_digit(i), Done(empty, i));
 
     let i = &b"g"[..];
