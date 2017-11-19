@@ -8,4 +8,4 @@ inputs:
 - name: nom
 
 run:
-  path: ./nom/test.sh
+  path: ./nom/ci/test.sh

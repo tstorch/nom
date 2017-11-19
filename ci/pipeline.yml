@@ -11,4 +11,4 @@ jobs:
   - get: nom
     trigger: true
   - task: tests
-    file: nom/build.yml
+    file: nom/ci/build.yml
