@@ -1,0 +1,14 @@
+resources:
+- name: nom
+  type: git
+  source:
+    uri: https://github.com/tstorch/nom.git
+    branch: concourse-test
+
+jobs:
+- name: unit-test
+  plan:
+  - get: nom
+    trigger: true
+  - task: tests
+    file: nom/ci/build.yml
